@@ -2046,7 +2046,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #9b4f90;
+				background-color: ;
 			}
 
 			input[type="submit"].special:active,
@@ -2983,7 +2983,7 @@
 					.wrapper.style2 input[type="button"].special:hover,
 					.wrapper.style2 button.special:hover,
 					.wrapper.style2 .button.special:hover {
-						background-color: #9b4f90;
+						background-color: ;
 					}
 
 					.wrapper.style2 input[type="submit"].special:active,
@@ -3099,6 +3099,8 @@
 		.wrapper.style3 {
 			background-color: #000;
 			color: #bfbfbf;
+			background-image: url(../../images/imageksp2.jpg);
+			background-size: cover;
 			background-attachment: fixed;
 			background-position: center;
 			position: relative;
@@ -3210,7 +3212,7 @@
 					.wrapper.style3 input[type="button"].special:hover,
 					.wrapper.style3 button.special:hover,
 					.wrapper.style3 .button.special:hover {
-						background-color: #9b4f90;
+						background-color: ;
 					}
 
 					.wrapper.style3 input[type="submit"].special:active,
@@ -3466,7 +3468,7 @@
 					.wrapper.style4 input[type="button"].special:hover,
 					.wrapper.style4 button.special:hover,
 					.wrapper.style4 .button.special:hover {
-						background-color: #9b4f90;
+						background-color: ;
 					}
 
 					.wrapper.style4 input[type="submit"].special:active,
@@ -3675,7 +3677,7 @@
 						.wrapper.style5 input[type="button"].special:hover,
 						.wrapper.style5 button.special:hover,
 						.wrapper.style5 .button.special:hover {
-							background-color: #9b4f90;
+							background-color: ;
 						}
 	
 						.wrapper.style5 input[type="submit"].special:active,

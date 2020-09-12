@@ -57,9 +57,8 @@
 			
 		<!-- Banner -->
 		<div id="home">
-			<section class="banner full">
+			<section class="banner full" id="vantaMain">
 				<article>
-					<img src="images/bg_line.gif" alt="" />
 					<div class="inner">
 						<header>
 							<p>DATA SCIENTIST</p>
@@ -526,6 +525,21 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/three.r119.min.js"></script>
+			<script src="assets/js/vanta.net.min.js"></script>
+			<script>
+			VANTA.NET({
+			  el: "#vantaMain",
+			  mouseControls: true,
+			  touchControls: true,
+			  gyroControls: false,
+			  minHeight: 200.00,
+			  minWidth: 200.00,
+			  scale: 1.00,
+			  scaleMobile: 1.00,
+			  color: 0x8c5c06,
+			  backgroundColor: 0x80f1b
+			})
+			</script>
 	</body>
 </html>

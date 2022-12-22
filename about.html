@@ -1,19 +1,21 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
+	
 	<head>
+
 		<title>Kritik Seth</title>
 
 		<link rel="photo icon" href="images/tab_icon.png" type="image/x-icon">
-		<meta charset="UTF-8"/>
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
 		<!-- Primary Meta Tags -->
         <meta name="author" content="Kritik Seth">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="title" content="Kritik Seth">
-        <meta name="author" content="Kritik Seth">
         <link rel="photo icon" href="images/tab_icon.png" type="image/x-icon">
 
         <!--  Social tags -->
@@ -50,18 +52,19 @@
 
 			gtag('config', 'UA-172445141-1');
 		</script>
-		
-		<link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700|Playfair+Display" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="assets/css/base.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/particles.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/pater.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this website in a modern browser that supports CSS Variables.");</script>
-	</head>
-	
-	<body class="demo-1">
 
+	</head>
+	<body>
+
+		<!-- Header -->
 		<header id="header" class="alt">
+			<div class="logo">
+				<a href="index.html">Kritik Seth <span>Data Scientist</span></a>
+			</div>
 			<a href="#menu">Menu</a>
+			<div class="banner full" style="height: 0px; width: 0px;">
+				<article style="height: 0px; width: 0px;"></article>
+			</div>
 		</header>
 
 		<!-- Nav -->
@@ -84,49 +87,53 @@
 			</ul>
 		</nav>
 
-		<main>
-			<div class="content">
-				<canvas class="scene scene--full" id="scene"></canvas>
-				<script type="x-shader/x-vertex" id="wrapVertexShader">
-					attribute float size;
-					attribute vec3 color;
-					varying vec3 vColor;
-					void main() {
-						vColor = color;
-						vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-						gl_PointSize = size * ( 350.0 / - mvPosition.z );
-						gl_Position = projectionMatrix * mvPosition;
-					}
-				</script>
-				<script type="x-shader/x-fragment" id="wrapFragmentShader">
-					varying vec3 vColor;
-					uniform sampler2D texture;
-					void main(){
-						vec4 textureColor = texture2D( texture, gl_PointCoord );
-						if ( textureColor.a < 0.3 ) discard;
-						vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
-						gl_FragColor = color;
-					}
-				</script>
-				<div class="content__inner" style="text-align: center;">
-					<h2 class="content__title">Kritik Seth</h2>
-					<h3 class="content__subtitle">Data Scientist</h2>
-						<br><br>
-						<ul class="icons">
-							<li style="padding-bottom: 20px"><a href="about.html">About Me</a></li>
-							<li style="padding-bottom: 20px"><a href="education.html">Education</a></li>
-							<li style="padding-bottom: 20px"><a href="experience.html">Experience</a></li>
-							<li style="padding-bottom: 20px"><a href="Projects.html">Projects</a></li>
-							<li style="padding-bottom: 20px"><a href="achievements.html">Achievements</a></li>
-						</ul>
-				</div>
-			</div>
-		</main>
+		<div id="aboutme">
 
-		<script src="assets/js/demo.js"></script>
-		<script src="assets/js/three.min.js"></script>
-		<script src="assets/js/TweenMax.min.js"></script>
-		<script src="assets/js/particles.js"></script>
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<h4></h4>
+						<h2>About Me</h2>
+					</header>
+				</div>
+			</section>
+
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+							<div class="content">
+								<div class="image fit">
+									<img src="images/kritik_banner_long.png" alt="" />
+								</div>
+							</div>
+						</div>
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<p>NAMASTE!</p>
+							</header>
+							<p></p>
+							<p align="justify"><em>Prelude: As someone who recognizes himself as a philonoist, this website is currently (and perennially will be) under construction.</em></p>
+                            <p align="justify">Namaste, my name is Kritik Seth and I am a Data Scientist based in New York. I am currently pursuing MS in Data Science from NYU Graduate School of Arts & Science (Center for Data Science), where I am expected to graduate in 2024. Prior to my Master's, I completed a BTech in Data Science in 2022. Throughout my academic journey, I have gained valuable hands-on experience through several internships in the field of data science.</p>
+                            <p align="justify">In addition to my academic and professional experience, I have also achieved success in multiple national and international ML hackathons, showcasing my strong problem-solving skills and ability to think critically. I have been programming in Python for over four years and have a solid foundation in mathematics and statistics, which have been essential in my studies and internships.</p>
+                            <p align="justify">I am known for my clear communication skills and ability to work both independently and collaboratively. I am a highly analytical individual with strong interpersonal and leadership skills, and I have a strong ability to clearly communicate complex and technical information.</p>
+							<p align="justify">My portfolio is a representation of all that I have learned and accomplished as a data science student and demonstrates my critical thinking skills, knowledge, and experience.</p>
+							<p>Connect with me:</p>
+							<ul class="icons">
+								<li><a href="mailto:sethkritik@gmail.com" target="_blank" class="email"><span class="iconify" data-icon="entypo:mail" data-inline="false"></span>  Email</a></li>
+								<li><a href="https://www.linkedin.com/in/kritikseth/" target="_blank" class="linkedin"><span class="iconify" data-icon="cib:linkedin" data-inline="false"></span>  LinkedIn</a></li>
+								<li><a href="https://github.com/kritikseth" target="_blank" class="github"><span class="iconify" data-icon="cib:github" data-inline="false"></span>  Github</a></li>
+								<li><a href="https://www.kaggle.com/kritikseth" target="_blank" class="kaggle"><span class="iconify" data-icon="cib:kaggle" data-inline="false"></span>  Kaggle (Expert)</a></li>
+								<li><a href="https://medium.com/@kritikseth" target="_blank" class="medium"><span class="iconify" data-icon="cib:medium" data-inline="false"></span>  Medium</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+            </section>
+
+        </div>
+
+		<!-- Footer -->
 		<footer id="footer">
 			<div class="container">
 				<ul class="icons" style="display: inline-block; text-align: left;">
@@ -146,5 +153,8 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/three.r119.min.js"></script>
+		<script src="assets/js/vanta.net.min.js"></script>
+
 	</body>
+
 </html>

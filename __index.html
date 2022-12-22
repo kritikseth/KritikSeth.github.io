@@ -1,15 +1,18 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
 	<head>
+
 		<title>Kritik Seth</title>
 
 		<link rel="photo icon" href="images/tab_icon.png" type="image/x-icon">
-		<meta charset="UTF-8"/>
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
 		<!-- Primary Meta Tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="author" content="Kritik Seth">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="title" content="Kritik Seth">
@@ -51,91 +54,69 @@
 			gtag('config', 'UA-172445141-1');
 		</script>
 		
-		<link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700|Playfair+Display" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="assets/css/base.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/particles.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/pater.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this website in a modern browser that supports CSS Variables.");</script>
 	</head>
-	
-	<body class="demo-1">
+	<body>
 
+		<!-- Header -->
 		<header id="header" class="alt">
+			<div class="logo">
+				<a href="index.html">Kritik Seth <span>Data Scientist</span></a>
+			</div>
 			<a href="#menu">Menu</a>
 		</header>
 
 		<!-- Nav -->
 		<nav id="menu">
 			<ul class="links">
-				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About Me</a></li>
 				<li><a href="education.html">Education</a></li>
 				<li><a href="experience.html">Experience</a></li>
-				<li><a href="Projects.html">Projects</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
 				<li><a href="achievements.html">Achievements</a></li>
 				<li><a href="contact.html">Connect with me</a>
 					<ul class="links">
-						<li><a href="mailto:sethkritik@gmail.com" target="_blank" class="email"><span class="iconify" data-icon="entypo:mail" data-inline="false"></span>  Email</a></li>
 						<li><a href="https://www.linkedin.com/in/kritikseth/" target="_blank" class="linkedin"><span class="iconify" data-icon="cib:linkedin" data-inline="false"></span>  LinkedIn</a></li>
 						<li><a href="https://github.com/kritikseth" target="_blank" class="github"><span class="iconify" data-icon="cib:github" data-inline="false"></span>  Github</a></li>
+						<li><a href="mailto:sethkritik@gmail.com" target="_blank" class="email"><span class="iconify" data-icon="entypo:mail" data-inline="false"></span>  Email</a></li>
 						<li><a href="https://www.kaggle.com/kritikseth" target="_blank" class="kaggle"><span class="iconify" data-icon="cib:kaggle" data-inline="false"></span>  Kaggle</a></li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
+			
+		<!-- Banner -->
+		<div id="home">
+			<section class="banner full" id="vantaMain">
+				<article>
+					<div class="inner">
+						<header>
+							<br><br><br><br>
+							<p>DATA SCIENTIST</p>
+							<h2>Kritik Seth</h2>
+							<br>
+							<ul class="icons">
+								<li><a href="about.html">About Me</a></li>
+								<li><a href="education.html">Education</a></li>
+								<li><a href="experience.html">Experience</a></li>
+								<li><a href="portfolio.html">Projects</a></li>
+								<li><a href="achievements.html">Achievements</a></li>
+							</ul>
+							<br><br><br><br>
+						</header>
+					</div>
+				</article>
+			</section>
+		</div>
 
-		<main>
-			<div class="content">
-				<canvas class="scene scene--full" id="scene"></canvas>
-				<script type="x-shader/x-vertex" id="wrapVertexShader">
-					attribute float size;
-					attribute vec3 color;
-					varying vec3 vColor;
-					void main() {
-						vColor = color;
-						vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-						gl_PointSize = size * ( 350.0 / - mvPosition.z );
-						gl_Position = projectionMatrix * mvPosition;
-					}
-				</script>
-				<script type="x-shader/x-fragment" id="wrapFragmentShader">
-					varying vec3 vColor;
-					uniform sampler2D texture;
-					void main(){
-						vec4 textureColor = texture2D( texture, gl_PointCoord );
-						if ( textureColor.a < 0.3 ) discard;
-						vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
-						gl_FragColor = color;
-					}
-				</script>
-				<div class="content__inner" style="text-align: center;">
-					<h2 class="content__title">Kritik Seth</h2>
-					<h3 class="content__subtitle">Data Scientist</h2>
-						<br><br>
-						<ul class="icons">
-							<li style="padding-bottom: 20px"><a href="about.html">About Me</a></li>
-							<li style="padding-bottom: 20px"><a href="education.html">Education</a></li>
-							<li style="padding-bottom: 20px"><a href="experience.html">Experience</a></li>
-							<li style="padding-bottom: 20px"><a href="Projects.html">Projects</a></li>
-							<li style="padding-bottom: 20px"><a href="achievements.html">Achievements</a></li>
-						</ul>
-				</div>
-			</div>
-		</main>
-
-		<script src="assets/js/demo.js"></script>
-		<script src="assets/js/three.min.js"></script>
-		<script src="assets/js/TweenMax.min.js"></script>
-		<script src="assets/js/particles.js"></script>
+		<!-- Footer -->
 		<footer id="footer">
 			<div class="container">
-				<ul class="icons" style="display: inline-block; text-align: left;">
-					<li><a href="mailto:sethkritik@gmail.com" target="_blank" class="email"><span class="iconify" data-icon="entypo:mail" data-inline="false"></span></a></li>
+				<ul class="icons">
 					<li><a href="https://www.linkedin.com/in/kritikseth/" target="_blank" class="linkedin"><span class="iconify" data-icon="cib:linkedin" data-inline="false"></span></a></li>
 					<li><a href="https://github.com/kritikseth" target="_blank" class="github"><span class="iconify" data-icon="cib:github" data-inline="false"></span></a></li>
+					<li><a href="mailto:sethkritik@gmail.com" target="_blank" class="email"><span class="iconify" data-icon="entypo:mail" data-inline="false"></span></a></li>
 					<li><a href="https://www.kaggle.com/kritikseth" target="_blank" class="kaggle"><span class="iconify" data-icon="cib:kaggle" data-inline="false"></span></a></li>
 				</ul>
-				<p><small>Updated: 31st December, 2022</small></p>
 			</div>
 		</footer>
 
@@ -146,5 +127,20 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/three.r119.min.js"></script>
+		<script src="assets/js/vanta.net.min.js"></script>
+		<script>
+			VANTA.NET({
+			  el: "#vantaMain",
+			  mouseControls: true,
+			  touchControls: true,
+			  gyroControls: false,
+			  minHeight: 200.00,
+			  minWidth: 200.00,
+			  scale: 1.00,
+			  scaleMobile: 1.00,
+			  color: 0x503c0c,
+			  backgroundColor: 0x80f1b
+			})
+		</script>
 	</body>
 </html>

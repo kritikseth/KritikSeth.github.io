@@ -1,17 +1,21 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
+
 	<head>
+
 		<title>Kritik Seth</title>
 
 		<link rel="photo icon" href="images/tab_icon.png" type="image/x-icon">
-		<meta charset="UTF-8"/>
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
 		<!-- Primary Meta Tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="author" content="Kritik Seth">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="title" content="Kritik Seth">
         <meta name="author" content="Kritik Seth">
         <link rel="photo icon" href="images/tab_icon.png" type="image/x-icon">
@@ -50,18 +54,19 @@
 
 			gtag('config', 'UA-172445141-1');
 		</script>
-		
-		<link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700|Playfair+Display" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="assets/css/base.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/particles.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/pater.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this website in a modern browser that supports CSS Variables.");</script>
-	</head>
-	
-	<body class="demo-1">
 
+	</head>
+	<body>
+
+		<!-- Header -->
 		<header id="header" class="alt">
+			<div class="logo">
+				<a href="index.html">Kritik Seth <span>Data Scientist</span></a>
+			</div>
 			<a href="#menu">Menu</a>
+			<div class="banner full" style="height: 0px; width: 0px;">
+				<article style="height: 0px; width: 0px;"></article>
+			</div>
 		</header>
 
 		<!-- Nav -->
@@ -84,49 +89,89 @@
 			</ul>
 		</nav>
 
-		<main>
-			<div class="content">
-				<canvas class="scene scene--full" id="scene"></canvas>
-				<script type="x-shader/x-vertex" id="wrapVertexShader">
-					attribute float size;
-					attribute vec3 color;
-					varying vec3 vColor;
-					void main() {
-						vColor = color;
-						vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-						gl_PointSize = size * ( 350.0 / - mvPosition.z );
-						gl_Position = projectionMatrix * mvPosition;
-					}
-				</script>
-				<script type="x-shader/x-fragment" id="wrapFragmentShader">
-					varying vec3 vColor;
-					uniform sampler2D texture;
-					void main(){
-						vec4 textureColor = texture2D( texture, gl_PointCoord );
-						if ( textureColor.a < 0.3 ) discard;
-						vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
-						gl_FragColor = color;
-					}
-				</script>
-				<div class="content__inner" style="text-align: center;">
-					<h2 class="content__title">Kritik Seth</h2>
-					<h3 class="content__subtitle">Data Scientist</h2>
-						<br><br>
-						<ul class="icons">
-							<li style="padding-bottom: 20px"><a href="about.html">About Me</a></li>
-							<li style="padding-bottom: 20px"><a href="education.html">Education</a></li>
-							<li style="padding-bottom: 20px"><a href="experience.html">Experience</a></li>
-							<li style="padding-bottom: 20px"><a href="Projects.html">Projects</a></li>
-							<li style="padding-bottom: 20px"><a href="achievements.html">Achievements</a></li>
-						</ul>
+		<div id="projects">
+            <section id="one" class="wrapper style3">
+                <div class="inner">
+                    <header class="align-center">
+						<h4></h4>
+                        <h2>Projects</h2>
+                    </header>
+                </div>
+            </section>
+			<section id="three" class="wrapper style2">
+				<div class="inner">
+					<div class="align-center">
+						<div class="gallery">
+							<div>
+								<div class="image fit">
+									<h4>Using Retinal Fundus Images for Multi-Disease Detection</h4>
+									<p>October 2021</p>
+									<p><i>Performing ensemble Deep Learning on Retinal Fundus Images for Multi Disease Detection (under Prof. Sarada S).</i></p>
+									<ul style="list-style-position: inside">
+										<li>Collected over 6000 retinal fundus images from an eye hospital in Mumbai.</li>
+										<li>Trained an ensemble CNN to identify 45 diseases from collected images with an accuracy score of 0.97</li>
+									</ul>
+									<p><i>(TensorFlow, CNN, OpenCV)</i></p>
+									<footer class="align-center">
+										<a href="https://drive.google.com/file/d/1TiX4LG-_r3P8OU2aDWh-59nPl4oHGPpY/view?usp=share_link" target="_blank" class="button alt"><span class="iconify" data-icon="mdi:google-drive" data-inline="false"></span>  Report</a>
+									</footer>
+								</div>
+							</div>
+							<div>
+								<div class="image fit">
+									<h4>swachhdata</h4>
+									<p>August 2020 - Present</p>
+									<p><i>Swachhdata is a python library that provides tools for data, text, and image preprocessing with over <span style="color: #650a0c">40,000 downloads</span> worldwide.</i></p>
+									<ul style="list-style-position: inside">
+										<li>Conceptualized swachhdata and coded 20+ functions for data, text and image preprocessing.</li>
+									</ul>
+									<p><i>(Regex, Git, PyPi, NLTK, OpenCV, Gensim, NumPy, and Pandas)</i></p>
+									<footer class="align-center">
+										<a href="https://github.com/swachhdata/swachhdata" target="_blank" class="button alt"><span class="iconify" data-icon="cib:github" data-inline="false"></span>  Report</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-		</main>
+				<div class="inner">
+					<div class="align-center">
+						<div class="gallery">
+							<div>
+								<div class="image fit">
+									<h4>Varta News Recommendation</h4>
+									<p>August 2021</p>
+									<p><i>A news website where any user can log in to the website using Google Login to receive personalised news.</i></p>
+									<ul style="list-style-position: inside">
+										<li>Programmed a model which used Pearson Correlation Score and Collaborative Filtering to give news recommendations.</li>
+									</ul>
+									<p><i>(Scikit-Learn, Git, NLTK, NumPy, Pandas, and Flask)</i></p>
+									<footer class="align-center">
+										<a href="https://github.com/kritikseth/Varta" target="_blank" class="button alt"><span class="iconify" data-icon="cib:github" data-inline="false"></span>  Report</a>
+									</footer>
+								</div>
+							</div>
+							<div>
+								<div class="image fit">
+									<h4>Wherebnb</h4>
+									<p>October 2020</p>
+									<p><i>A website that predicts the price and popularity of a listing using ML and provides an interactive map of real listings.</i></p>
+									<ul style="list-style-position: inside">
+										<li>Trained machine learning models with an accuracy score of 0.932, and programmed the backend in Python using Flask.</li>
+									</ul>
+									<p><i>(Python, Flask, TensorFlow, Scikit-Learn, HTML-CSS, and Tableau)</i></p>
+									<footer class="align-center">
+										<a href="https://github.com/kritikseth/Wherebnb" target="_blank" class="button alt"><span class="iconify" data-icon="cib:github" data-inline="false"></span>  Report</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
 
-		<script src="assets/js/demo.js"></script>
-		<script src="assets/js/three.min.js"></script>
-		<script src="assets/js/TweenMax.min.js"></script>
-		<script src="assets/js/particles.js"></script>
+		<!-- Footer -->
 		<footer id="footer">
 			<div class="container">
 				<ul class="icons" style="display: inline-block; text-align: left;">
@@ -146,5 +191,7 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/three.r119.min.js"></script>
+			
 	</body>
+
 </html>

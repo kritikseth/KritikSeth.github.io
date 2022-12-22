@@ -1,17 +1,20 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Kritik Seth</title>
 
+	<head>
+
+		<title>Kritik Seth</title>
+        
 		<link rel="photo icon" href="images/tab_icon.png" type="image/x-icon">
-		<meta charset="UTF-8"/>
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
 		<!-- Primary Meta Tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="author" content="Kritik Seth">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="title" content="Kritik Seth">
         <meta name="author" content="Kritik Seth">
         <link rel="photo icon" href="images/tab_icon.png" type="image/x-icon">
@@ -19,7 +22,7 @@
         <!--  Social tags -->
         <meta name="keywords" content="kritik, kritik seth, seth kritik, kritik_seth, kritik nmims, kritik nyu, data science, data scientist, machine learning, kritik data scientist, kritik seth resume, kritik seth github, kritik seth linkedin, kritik seth kaggle, kritik seth instagram, kritikseth, sethkritik">
         <meta name="description" content="An aspiring Data Scientist, pursuing MS in Data Science from NYU Graduate School of Arts and Science, Center for Data Science.">
-
+        
         <!-- Schema.org markup for Google+ -->
         <meta itemprop="name" content="Kritik Seth">
         <meta itemprop="description" content="An aspiring Data Scientist, pursuing MS in Data Science from NYU Graduate School of Arts and Science, Center for Data Science.">
@@ -47,23 +50,24 @@
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
-
+            
 			gtag('config', 'UA-172445141-1');
 		</script>
-		
-		<link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700|Playfair+Display" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="assets/css/base.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/particles.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/pater.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this website in a modern browser that supports CSS Variables.");</script>
+
 	</head>
-	
-	<body class="demo-1">
+	<body>
 
+		<!-- Header -->
 		<header id="header" class="alt">
+			<div class="logo">
+				<a href="index.html">Kritik Seth <span>Data Scientist</span></a>
+			</div>
 			<a href="#menu">Menu</a>
+			<div class="banner full" style="height: 0px; width: 0px;">
+				<article style="height: 0px; width: 0px;"></article>
+			</div>
 		</header>
-
+        
 		<!-- Nav -->
 		<nav id="menu">
 			<ul class="links">
@@ -84,49 +88,47 @@
 			</ul>
 		</nav>
 
-		<main>
-			<div class="content">
-				<canvas class="scene scene--full" id="scene"></canvas>
-				<script type="x-shader/x-vertex" id="wrapVertexShader">
-					attribute float size;
-					attribute vec3 color;
-					varying vec3 vColor;
-					void main() {
-						vColor = color;
-						vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-						gl_PointSize = size * ( 350.0 / - mvPosition.z );
-						gl_Position = projectionMatrix * mvPosition;
-					}
-				</script>
-				<script type="x-shader/x-fragment" id="wrapFragmentShader">
-					varying vec3 vColor;
-					uniform sampler2D texture;
-					void main(){
-						vec4 textureColor = texture2D( texture, gl_PointCoord );
-						if ( textureColor.a < 0.3 ) discard;
-						vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
-						gl_FragColor = color;
-					}
-				</script>
-				<div class="content__inner" style="text-align: center;">
-					<h2 class="content__title">Kritik Seth</h2>
-					<h3 class="content__subtitle">Data Scientist</h2>
-						<br><br>
-						<ul class="icons">
-							<li style="padding-bottom: 20px"><a href="about.html">About Me</a></li>
-							<li style="padding-bottom: 20px"><a href="education.html">Education</a></li>
-							<li style="padding-bottom: 20px"><a href="experience.html">Experience</a></li>
-							<li style="padding-bottom: 20px"><a href="Projects.html">Projects</a></li>
-							<li style="padding-bottom: 20px"><a href="achievements.html">Achievements</a></li>
-						</ul>
+        <div id="experience">
+            <section id="one" class="wrapper style3">
+                <div class="inner">
+                    <header class="align-center">
+						<h4></h4>
+                        <h2>Education</h2>
+                    </header>
+                </div>
+            </section>
+			<section id="three" class="wrapper style4">
+				<div class="inner">
+					<div class="align-center">
+						<div class="row_cards">
+							<div>
+								<div class="image fit">
+									<h6></h6>
+									<h4>Master of Science in <span style="color: #ac1122">Data Science</span></h4>
+									<h5><a href="https://www.nyu.edu/" target="_blank"><span style="color: #650a0c">New York University</span></a> - <a href="https://gsas.nyu.edu/" target="_blank">Graduate School of Arts and Science</a>, <a href="https://cds.nyu.edu/" target="_blank">Center for Data Science</a></h5>
+									<h5>New York, NY, US | 2022 - 2024 (Expected)</h5>
+									<p style="font-size: 0.9rem">Relevant Courses: Linear Algebra & Optimization, Probability & Statistics, Introduction to Data Science, Machine Learning, Big Data</p>
+									<h6></h6>
+								</div>
+							</div>
+							<div>
+								<div class="image fit">
+									<h6></h6>
+									<h4>Bachelor of Technology in <span style="color: #ac1122">Data Science</span></h4>
+									<h5><a href="https://www.nmims.edu/" target="_blank"><span style="color: #650a0c">NMIMS University</span></a> - <a href="https://engineering.nmims.edu/" target="_blank">Mukesh Patel School of Technology Management & Engineering</a></h5>
+									<h5>Mumbai, India | 2018 - 2022</h5>
+									<p></p>
+									<p style="font-size: 0.9rem">Relevant Courses: Statistical Modeling 1 & 2, Machine Learning, Deep Learning, Managing Uncertainty, Advanced Neural Networks, Computer Vision, Natural Language Processing, Database Management Systems, Data Structures and Algorithms, Artificial Intelligence, Applied Mathematics</p>
+									<a href="https://drive.google.com/file/d/1WdqV4OLda-tvEmqtvIUhLzIccW7mdqdf/view?usp=sharing" target="_blank">Transcript</a>
+									<h6></h6>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-		</main>
-
-		<script src="assets/js/demo.js"></script>
-		<script src="assets/js/three.min.js"></script>
-		<script src="assets/js/TweenMax.min.js"></script>
-		<script src="assets/js/particles.js"></script>
+			</section>
+        </div>
+		<!-- Footer -->
 		<footer id="footer">
 			<div class="container">
 				<ul class="icons" style="display: inline-block; text-align: left;">
@@ -146,5 +148,7 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/three.r119.min.js"></script>
+
 	</body>
+
 </html>

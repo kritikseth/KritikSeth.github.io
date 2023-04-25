@@ -78,6 +78,7 @@
 				<li><a href="experience.html">Experience</a></li>
 				<li><a href="projects.html">Projects</a></li>
 				<li><a href="achievements.html">Achievements</a></li>
+				<li><a href="twitter.html">Twitter</a></li>
 				<li><a href="contact.html">Connect with me</a>
 					<ul class="links">
 						<li><a href="mailto:sethkritik@gmail.com" target="_blank" class="email"><span class="iconify" data-icon="entypo:mail" data-inline="false"></span>  Email</a></li>
@@ -90,7 +91,7 @@
 		</nav>
 
 		<div id="projects">
-            <section id="one" class="wrapper style3">
+            <section id="veins" class="wrapper style3">
                 <div class="inner">
                     <header class="align-center">
 						<h4></h4>
@@ -154,11 +155,11 @@
 							</div>
 							<div>
 								<div class="image fit">
-									<h4>Varta News Recommendation</h4>
+									<h4>Varta Twitter Recommendation</h4>
 									<p>August 2021</p>
-									<p><i>A news website where any user can log in to the website using Google Login to receive personalised news.</i></p>
+									<p><i>A Twitter website where any user can log in to the website using Google Login to receive personalised Twitter.</i></p>
 									<ul style="list-style-position: inside">
-										<li>Programmed a model which used Pearson Correlation Score and Collaborative Filtering to give news recommendations.</li>
+										<li>Programmed a model which used Pearson Correlation Score and Collaborative Filtering to give Twitter recommendations.</li>
 									</ul>
 									<p><i>(Scikit-Learn, Git, NLTK, NumPy, Pandas, and Flask)</i></p>
 									<footer class="align-center">
@@ -220,12 +221,29 @@
 		</footer>
 
 		<!-- Scripts -->
+		<script src="assets/js/p5.min.js"></script>
+		<script src="assets/js/vanta.topology.min.js"></script>
+		<script src="assets/js/three.min.js"></script>
+		<script src="assets/js/three.r119.min.js"></script>
+		<script>
+		VANTA.TOPOLOGY({
+		  el: "#veins",
+		  mouseControls: true,
+		  touchControls: true,
+		  gyroControls: false,
+		  minHeight: 100.00,
+		  minWidth: 200.00,
+		  scale: 1.00,
+		  scaleMobile: 1.00,
+		  color: 0xff1725,
+		  backgroundColor: 0x220000
+		})
+		</script>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
 		<script src="assets/js/skel.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		<script src="assets/js/three.r119.min.js"></script>
 			
 	</body>
 

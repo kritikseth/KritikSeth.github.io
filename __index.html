@@ -8,7 +8,7 @@
 		<link rel="photo icon" href="images/tab_icon.png" type="image/x-icon">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" id="theme" href="assets/css/main-light.css" />
 		<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
 		<!-- Primary Meta Tags -->
@@ -68,20 +68,22 @@
 		<!-- Nav -->
 		<nav id="menu">
 			<ul class="links">
+				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About Me</a></li>
 				<li><a href="education.html">Education</a></li>
 				<li><a href="experience.html">Experience</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="projects.html">Projects</a></li>
 				<li><a href="achievements.html">Achievements</a></li>
 				<li><a href="twitter.html">Twitter</a></li>
 				<li><a>Connect with me</a>
 					<ul class="links">
+						<li><a href="mailto:sethkritik@gmail.com" target="_blank" class="email"><span class="iconify" data-icon="entypo:mail" data-inline="false"></span>  Email</a></li>
 						<li><a href="https://www.linkedin.com/in/kritikseth/" target="_blank" class="linkedin"><span class="iconify" data-icon="cib:linkedin" data-inline="false"></span>  LinkedIn</a></li>
 						<li><a href="https://github.com/kritikseth" target="_blank" class="github"><span class="iconify" data-icon="cib:github" data-inline="false"></span>  Github</a></li>
-						<li><a href="mailto:sethkritik@gmail.com" target="_blank" class="email"><span class="iconify" data-icon="entypo:mail" data-inline="false"></span>  Email</a></li>
 						<li><a href="https://www.kaggle.com/kritikseth" target="_blank" class="kaggle"><span class="iconify" data-icon="cib:kaggle" data-inline="false"></span>  Kaggle</a></li>
 					</ul>
 				</li>
+				<li style="float: right;"><button id="toggle-theme">Theme</button></li>
 			</ul>
 		</nav>
 			
@@ -123,26 +125,29 @@
 		</footer>
 
 		<!-- Scripts -->
+		<script src="assets/js/theme.js"></script>
+		<script src="assets/js/demo.js"></script>
+		<script src="assets/js/three.min.js"></script>
+		<script src="assets/js/TweenMax.min.js"></script>
+		<script src="assets/js/particles.js"></script>
+		<footer id="footer">
+			<div class="container">
+				<ul class="icons" style="display: inline-block; text-align: left;">
+					<li><a href="mailto:sethkritik@gmail.com" target="_blank" class="email"><span class="iconify" data-icon="entypo:mail" data-inline="false"></span></a></li>
+					<li><a href="https://www.linkedin.com/in/kritikseth/" target="_blank" class="linkedin"><span class="iconify" data-icon="cib:linkedin" data-inline="false"></span></a></li>
+					<li><a href="https://github.com/kritikseth" target="_blank" class="github"><span class="iconify" data-icon="cib:github" data-inline="false"></span></a></li>
+					<li><a href="https://www.kaggle.com/kritikseth" target="_blank" class="kaggle"><span class="iconify" data-icon="cib:kaggle" data-inline="false"></span></a></li>
+				</ul>
+				<p><small>Updated: 25th April 2023</small></p>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
 		<script src="assets/js/skel.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/three.r119.min.js"></script>
-		
-		<script>
-			VANTA.NET({
-			  el: "#vantaMain",
-			  mouseControls: true,
-			  touchControls: true,
-			  gyroControls: false,
-			  minHeight: 200.00,
-			  minWidth: 200.00,
-			  scale: 1.00,
-			  scaleMobile: 1.00,
-			  color: 0x503c0c,
-			  backgroundColor: 0x80f1b
-			})
-		</script>
 	</body>
 </html>

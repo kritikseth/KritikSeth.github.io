@@ -9,7 +9,7 @@
 		<link rel="photo icon" href="images/tab_icon.png" type="image/x-icon">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" id="theme" href="assets/css/main-light.css" />
 		<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
 		<!-- Primary Meta Tags -->
@@ -82,12 +82,13 @@
 				<li><a href="twitter.html">Twitter</a></li>
 				<li><a>Connect with me</a>
 					<ul class="links">
+						<li><a href="mailto:sethkritik@gmail.com" target="_blank" class="email"><span class="iconify" data-icon="entypo:mail" data-inline="false"></span>  Email</a></li>
 						<li><a href="https://www.linkedin.com/in/kritikseth/" target="_blank" class="linkedin"><span class="iconify" data-icon="cib:linkedin" data-inline="false"></span>  LinkedIn</a></li>
 						<li><a href="https://github.com/kritikseth" target="_blank" class="github"><span class="iconify" data-icon="cib:github" data-inline="false"></span>  Github</a></li>
-						<li><a href="mailto:sethkritik@gmail.com" target="_blank" class="email"><span class="iconify" data-icon="entypo:mail" data-inline="false"></span>  Email</a></li>
 						<li><a href="https://www.kaggle.com/kritikseth" target="_blank" class="kaggle"><span class="iconify" data-icon="cib:kaggle" data-inline="false"></span>  Kaggle</a></li>
 					</ul>
 				</li>
+				<li style="float: right;"><button id="toggle-theme">Theme</button></li>
 			</ul>
 		</nav>
 
@@ -133,9 +134,9 @@
 		</footer>
 
 		<!-- Scripts -->
+		<script src="assets/js/theme.js"></script>
 		<script src="assets/js/p5.min.js"></script>
 		<script src="assets/js/vanta.topology.min.js"></script>
-		
 		<script>
 		VANTA.TOPOLOGY({
 		  el: "#veins",
@@ -155,7 +156,6 @@
 		<script src="assets/js/skel.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-
 	</body>
 
 </html>

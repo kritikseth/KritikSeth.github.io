@@ -1,0 +1,67 @@
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{{ page.title | default: site.title }}</title>
+
+		{%- assign description = page.description | default: site.description %}
+		{%- assign social_title = page.social_title | default: "Kritik Seth- Data Scientist" %}
+		{%- assign social_image = site.social_image | absolute_url %}
+
+		<!-- Primary Meta Tags -->
+		<meta name="author" content="{{ site.author }}">
+		<meta name="description" content="{{ description }}">
+		<meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
+		<link rel="canonical" href="{{ page.url | absolute_url }}">
+		<link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon-32.png' | relative_url }}">
+		<link rel="apple-touch-icon" href="{{ '/images/apple-touch-icon.png' | relative_url }}">
+		<meta name="theme-color" content="#000000">
+
+		<!-- Twitter Card data -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@{{ site.twitter_username }}">
+		<meta name="twitter:creator" content="@{{ site.twitter_username }}">
+		<meta name="twitter:title" content="{{ social_title }}">
+		<meta name="twitter:description" content="{{ description }}">
+		<meta name="twitter:image" content="{{ social_image }}">
+
+		<!-- Open Graph data -->
+		<meta property="og:title" content="{{ social_title }}" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="{{ page.url | absolute_url }}" />
+		<meta property="og:image" content="{{ social_image }}" />
+		<meta property="og:description" content="{{ description }}" />
+		<meta property="og:site_name" content="{{ site.title }}" />
+
+		<!-- Apply the saved (or system) theme before the page renders, so it doesn't flash. -->
+		<script>
+			(function () {
+				var theme;
+				try { theme = localStorage.getItem('theme'); } catch (e) {}
+				// Older versions of the site stored the stylesheet path, e.g. "assets/css/main-light.css".
+				if (theme && theme.indexOf('light') !== -1) theme = 'light';
+				else if (theme && theme.indexOf('dark') !== -1) theme = 'dark';
+				else theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+				document.documentElement.setAttribute('data-theme', theme);
+			})();
+		</script>
+		<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+		{%- if page.home %}
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:400,500,700|Playfair+Display&display=swap">
+		<link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}" />
+		<link rel="stylesheet" href="{{ '/assets/css/particles.css' | relative_url }}" />
+		<script>document.documentElement.classList.add('js');</script>
+		{%- endif %}
+		<script src="https://code.iconify.design/1/1.0.6/iconify.min.js" defer></script>
+
+		{%- if site.ga4_id %}
+
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4_id }}"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', '{{ site.ga4_id }}');
+		</script>
+		{%- endif %}

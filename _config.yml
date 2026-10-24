@@ -1,0 +1,54 @@
+title: Kritik Seth
+url: https://www.kritikseth.com
+author: Kritik Seth
+twitter_username: kritik_seth
+
+description: Data Scientist based in New York, pursuing MS in Data Science from New York University, Center for Data Science.
+keywords: kritik, kritik seth, seth kritik, kritik_seth, kritik nmims, kritik nyu, data science, data scientist, machine learning, kritik data scientist, kritik seth resume, kritik seth github, kritik seth linkedin, kritik seth kaggle, kritik seth instagram, kritikseth, sethkritik
+social_image: /images/kritik_banner_long.png
+
+# Shown in the footer of every page.
+updated: 27th May 2024
+
+# Google Analytics 4 measurement ID (e.g. G-XXXXXXXXXX). Leave empty to disable analytics.
+ga4_id:
+
+plugins:
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: "nyu.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "schedule.html"
+    values:
+      sitemap: false
+  # Redirect pages and company-specific resumes shouldn't be listed in search engines' sitemap.
+  - scope:
+      path: "redirect.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "ipynbtagredirect.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "gotoyoga.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "documents/companies"
+    values:
+      sitemap: false
+
+exclude:
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor

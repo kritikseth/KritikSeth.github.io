@@ -1,0 +1,23 @@
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="container">
+				{%- if page.extended_footer %}
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/kritikseth/" target="_blank" rel="noopener" class="linkedin" aria-label="LinkedIn"><span class="iconify" data-icon="cib:linkedin" data-inline="false"></span></a></li>
+					<li><a href="https://github.com/kritikseth" target="_blank" rel="noopener" class="github" aria-label="GitHub"><span class="iconify" data-icon="cib:github" data-inline="false"></span></a></li>
+					<li><a href="https://www.kaggle.com/kritikseth" target="_blank" rel="noopener" class="kaggle" aria-label="Kaggle"><span class="iconify" data-icon="simple-icons:kaggle" data-inline="false"></span></a></li>
+					<li><a href="https://medium.com/@kritikseth" target="_blank" rel="noopener" class="medium" aria-label="Medium"><span class="iconify" data-icon="cib:medium" data-inline="false"></span></a></li>
+					<li><a href="mailto:sethkritik@gmail.com" target="_blank" rel="noopener" class="email" aria-label="Email"><span class="iconify" data-icon="entypo:mail" data-inline="false"></span></a></li>
+				</ul>
+				{%- else %}
+				<ul class="icons" style="display: inline-block; text-align: left;">
+					<li><a href="mailto:sethkritik@gmail.com" target="_blank" rel="noopener" class="email" aria-label="Email"><span class="iconify" data-icon="entypo:mail" data-inline="false"></span></a></li>
+					<li><a href="https://www.linkedin.com/in/kritikseth/" target="_blank" rel="noopener" class="linkedin" aria-label="LinkedIn"><span class="iconify" data-icon="cib:linkedin" data-inline="false"></span></a></li>
+					<li><a href="https://github.com/kritikseth" target="_blank" rel="noopener" class="github" aria-label="GitHub"><span class="iconify" data-icon="cib:github" data-inline="false"></span></a></li>
+					<li><a href="https://www.kaggle.com/kritikseth" target="_blank" rel="noopener" class="kaggle" aria-label="Kaggle"><span class="iconify" data-icon="cib:kaggle" data-inline="false"></span></a></li>
+				</ul>
+				{%- endif %}
+				<p><small>Updated: {{ site.updated }}</small></p>
+			</div>
+		</footer>

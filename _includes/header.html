@@ -1,0 +1,14 @@
+
+		<!-- Header -->
+		{%- if page.home %}
+		<header id="header" class="alt">
+			<a href="#menu" aria-controls="menu" aria-expanded="false">Menu</a>
+		</header>
+		{%- else %}
+		<header id="header"{% if page.header_class != "" %} class="{{ page.header_class | default: 'reveal' }}"{% endif %}>
+			<div class="logo">
+				<a href="{{ '/' | relative_url }}">Kritik Seth <span>Data Scientist</span></a>
+			</div>
+			<a href="#menu" aria-controls="menu" aria-expanded="false">Menu</a>
+		</header>
+		{%- endif %}
